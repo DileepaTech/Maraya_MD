@@ -382,7 +382,7 @@ module.exports = {
             : "『 *Attention Everybody* 』";
         } else {
           message2 =
-            "『 *Attention Everybody* 』\n\n*🎀 Message:* Check this Out !";
+            "『 *Attention Everybody* 』\n\n*🎀 Message:* 😈Maraya-MD Public😈 !";
         }
 
         await doReact("🎌");
