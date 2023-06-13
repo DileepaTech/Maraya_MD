@@ -599,34 +599,34 @@ module.exports = {
           if (chechbotMode == "self") {
             await doReact("❌");
             return m.reply(
-              `Bot is already in *Self* mode !\n\nOnly *Bot Hoster (Bot number)* can use bot.`
+              `😈Maraya-MD Public😈 is already in *Self* mode !\n\nOnly *Bot Hoster (Bot number)* can use bot.`
             );
           } else {
             await doReact("🧩");
             await setBotMode("self");
-            await m.reply(`Bot has been set to *Self* mode Successfully !`);
+            await m.reply(`😈Maraya-MD Public😈 has been set to *Self* mode Successfully !`);
           }
         } else if (args[0] == "private") {
           if (chechbotMode == "private") {
             await doReact("❌");
             return m.reply(
-              `Bot is already in *Private* mode !\n\nOnly bot *Owners / Mods* can use bot.`
+              `😈Maraya-MD Public😈 is already in *Private* mode !\n\nOnly bot *Owners / Mods* can use bot.`
             );
           } else {
             await doReact("🧩");
             await setBotMode("private");
-            await m.reply(`Bot has been set to *Private* mode Successfully !`);
+            await m.reply(`😈Maraya-MD Public😈 has been set to *Private* mode Successfully !`);
           }
         } else if (args[0] == "public") {
           if (chechbotMode == "public") {
             await doReact("❌");
             return m.reply(
-              `Bot is already in *Public* mode !\n\nAnyone can use bot.`
+              `😈Maraya-MD Public😈 is already in *Public* mode !\n\nAnyone can use bot.`
             );
           } else {
             await doReact("🧩");
             await setBotMode("public");
-            await m.reply(`Bot has been set to *Public* mode Successfully !`);
+            await m.reply(`😈Maraya-MD Public😈 has been set to *Public* mode Successfully !`);
           }
         } else {
           await doReact("❌");
