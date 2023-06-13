@@ -43,7 +43,7 @@ module.exports = {
         }
         await doReact("🔍");
         let googleSearch = await googleit({ query: text });
-        let resText = `  *『  ⚡️ Google Search Engine ⚡️  』*\n\n\n_🔍 Search Term:_ *${text}*\n\n\n`;
+        let resText = `  *『  ⚡️ 😈Maraya-MD Public😈 Engine ⚡️  』*\n\n\n_🔍 Search Term:_ *${text}*\n\n\n`;
 
         for (let num = 0; num < 10; num++) {
           resText += `_📍 Result:_ *${num + 1}*\n\n_🎀 Title:_ *${
@@ -80,7 +80,7 @@ module.exports = {
         let lyrics = result.data.lyrics;
         let thumbnail = result.data.thumbnail;
 
-        let resText2 = `  *『  ⚡️ Lyrics Search Engine ⚡️  』*\n\n\n_Search Term:_ *${text}*\n\n\n*📍 Lyrics:* \n\n${lyrics}\n\n\n_*Powered by:*_ *Scrappy API - by FantoX*\n\n_*Url:*_ https://github.com/FantoX001/Scrappy-API \n`;
+        let resText2 = `  *『  ⚡️ 😈Maraya-MD Public😈 Search Engine ⚡️  』*\n\n\n_Search Term:_ *${text}*\n\n\n*📍 Lyrics:* \n\n${lyrics}\n\n\n_*Powered by:*_ *Scrappy API - by FantoX*\n\n_*Url:*_ https://github.com/FantoX001/Scrappy-API \n`;
         await Atlas.sendMessage(
           m.from,
           {
@@ -107,7 +107,7 @@ module.exports = {
         let thumbnail2 = search.all[0].thumbnail;
         let num = 1;
 
-        let txt2 = `*🏮 YouTube Search Engine 🏮*\n\n_🧩 Search Term:_ *${text}*\n\n*📌 Total Results:* *${search.all.length}*\n`;
+        let txt2 = `*🏮 😈Maraya-MD Public😈 Search Engine 🏮*\n\n_🧩 Search Term:_ *${text}*\n\n*📌 Total Results:* *${search.all.length}*\n`;
         for (let i of search.all) {
           txt2 += `\n_Result:_ *${num++}*\n_🎀 Title:_ *${
             i.title
@@ -129,7 +129,7 @@ module.exports = {
       };
       sections.push(list);
     }
-    var txt2 = `*🏮 YouTube Search Engine 🏮*\n\n_🧩 Search Term:_ *${text}*\n\n*📌 Total Results:* *${search.all.length}*\n`;*/
+    var txt2 = `*🏮 😈Maraya-MD Public😈 Search Engine 🏮*\n\n_🧩 Search Term:_ *${text}*\n\n*📌 Total Results:* *${search.all.length}*\n`;*/
 
         let buttonMessage = {
           image: { url: thumbnail2 },
@@ -176,7 +176,7 @@ module.exports = {
           `https://api.openweathermap.org/data/2.5/weather?q=${text}&units=metric&appid=e409825a497a0c894d2dd975542234b0&language=tr`
         );
 
-        let weathertext = `           🌤 *Weather Report* 🌤  \n\n🔎 *Search Location:* ${myweather.data.name}\n*💮 Country:* ${myweather.data.sys.country}\n🌈 *Weather:* ${myweather.data.weather[0].description}\n🌡️ *Temperature:* ${myweather.data.main.temp}°C\n❄️ *Minimum Temperature:* ${myweather.data.main.temp_min}°C\n📛 *Maximum Temperature:* ${myweather.data.main.temp_max}°C\n💦 *Humidity:* ${myweather.data.main.humidity}%\n🎐 *Wind:* ${myweather.data.wind.speed} km/h\n`;
+        let weathertext = `           🌤 * 😈Maraya-MD Public😈 Weather Report* 🌤  \n\n🔎 *Search Location:* ${myweather.data.name}\n*💮 Country:* ${myweather.data.sys.country}\n🌈 *Weather:* ${myweather.data.weather[0].description}\n🌡️ *Temperature:* ${myweather.data.main.temp}°C\n❄️ *Minimum Temperature:* ${myweather.data.main.temp_min}°C\n📛 *Maximum Temperature:* ${myweather.data.main.temp_max}°C\n💦 *Humidity:* ${myweather.data.main.humidity}%\n🎐 *Wind:* ${myweather.data.wind.speed} km/h\n`;
 
         await Atlas.sendMessage(
           m.from,
@@ -229,7 +229,7 @@ module.exports = {
         if (!text) {
           await doReact("❔");
           return m.reply(
-            `Please provide a valid *Github* username!\n\nExample: *${prefix}gh FantoX001*`
+            `Please provide a valid *Github* username!\n\nExample: *${prefix}gh dileepa*`
           );
         }
         await doReact("📊");
