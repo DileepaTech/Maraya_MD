@@ -60,7 +60,7 @@ const startAtlas = async () => {
 
   const { saveState, state, clearState } = await getAuthFromDatabase();
   console.log(
-    figlet.textSync("ATLAS", {
+    figlet.textSync("Maraya", {
       font: "Standard",
       horizontalLayout: "default",
       vertivalLayout: "default",
@@ -77,7 +77,7 @@ const startAtlas = async () => {
   const Atlas = atlasConnect({
     logger: pino({ level: "silent" }),
     printQRInTerminal: true,
-    browser: ["Atlas", "Safari", "1.0.0"],
+    browser: ["Maraya", "Safari", "1.0.0"],
     auth: state,
     version,
   });
@@ -102,7 +102,7 @@ const startAtlas = async () => {
 
     if (!plugins.length || plugins.length == 0) {
       console.log(
-        chalk.redBright("No Extra Plugins Installed ! Starting Atlas...\n")
+        chalk.redBright("No Extra Plugins Installed ! Starting Maraya...\n")
       );
     } else {
       console.log(
@@ -125,7 +125,7 @@ const startAtlas = async () => {
       }
       console.log(
         chalk.greenBright(
-          "All Plugins Installed Successfully ! Starting Atlas...\n"
+          "All Plugins Installed Successfully ! Starting Maraya...\n"
         )
       );
     }
@@ -149,31 +149,31 @@ const startAtlas = async () => {
         );
         process.exit();
       } else if (reason === DisconnectReason.connectionClosed) {
-        console.log("[ ATLAS ] Connection closed, reconnecting....\n");
+        console.log("[ Maraya ] Connection closed, reconnecting....\n");
         startAtlas();
       } else if (reason === DisconnectReason.connectionLost) {
-        console.log("[ ATLAS ] Connection Lost from Server, reconnecting...\n");
+        console.log("[ Maraya ] Connection Lost from Server, reconnecting...\n");
         startAtlas();
       } else if (reason === DisconnectReason.connectionReplaced) {
         console.log(
-          "[ ATLAS ] Connection Replaced, Another New Session Opened, Please Close Current Session First!\n"
+          "[ Maraya ] Connection Replaced, Another New Session Opened, Please Close Current Session First!\n"
         );
         process.exit();
       } else if (reason === DisconnectReason.loggedOut) {
         clearState();
         console.log(
-          `[ ATLAS ] Device Logged Out, Please Delete Session and Scan Again.\n`
+          `[ Maraya ] Device Logged Out, Please Delete Session and Scan Again.\n`
         );
         process.exit();
       } else if (reason === DisconnectReason.restartRequired) {
-        console.log("[ ATLAS ] Server Restarting...\n");
+        console.log("[ Maraya ] Server Restarting...\n");
         startAtlas();
       } else if (reason === DisconnectReason.timedOut) {
-        console.log("[ ATLAS ] Connection Timed Out, Trying to Reconnect...\n");
+        console.log("[ Maraya ] Connection Timed Out, Trying to Reconnect...\n");
         startAtlas();
       } else {
         console.log(
-          `[ ATLAS ] Server Disconnected: "It's either safe disconnect or WhatsApp Account got banned !\n"`
+          `[ Maraya ] Server Disconnected: "It's either safe disconnect or WhatsApp Account got banned !\n"`
         );
       }
     }
